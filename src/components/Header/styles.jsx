@@ -2,10 +2,15 @@ import styled, { css } from "styled-components";
 
 export const Wrapper = styled.header`
     border-bottom: 1px solid ${(props) => props.theme.lightBlue};
+
+    position: sticky;
+    top: 0;
+
+    background-color: #fff;
 `;
 
 export const Container = styled.header`
-    max-width: 90rem;
+    max-width: 75rem;
     padding-inline: 2rem;
     margin-inline: auto;
 

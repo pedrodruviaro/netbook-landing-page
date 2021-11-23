@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         background-color: ${(props) => props.theme.light};
-        line-height: 1.5;
+        line-height: 1.2;
     }
 
     h1,h2,h3,h4,h5,h6{

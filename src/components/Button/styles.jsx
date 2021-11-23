@@ -11,7 +11,7 @@ export const Container = styled.button`
     border-radius: 14px;
     border: 1px solid currentColor;
 
-    padding: 1.25em 2.6em;
+    padding: 1em 2em;
     transition: filter 300ms ease;
 
     &:hover,
