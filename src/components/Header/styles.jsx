@@ -4,8 +4,9 @@ export const Wrapper = styled.header`
     border-bottom: 1px solid ${(props) => props.theme.lightBlue};
 
     position: sticky;
-    top: 0;
-
+    top: -2px;
+    left: 0;
+    z-index: 999;
     background-color: #fff;
 `;
 

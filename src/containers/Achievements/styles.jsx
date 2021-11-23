@@ -35,6 +35,9 @@ export const AchievementCard = styled.article`
     width: 100%;
     max-width: 20rem;
 
+    display: grid;
+    gap: 1rem;
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
         rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
@@ -53,6 +56,9 @@ export const AchievementCard = styled.article`
     }
 
     main {
+        p {
+            margin-top: 1rem;
+        }
         div {
             display: flex;
             align-items: center;
@@ -61,6 +67,7 @@ export const AchievementCard = styled.article`
             span {
                 margin-top: -0.5rem;
                 font-weight: 500;
+                line-height: 1.3;
 
                 strong {
                     color: ${(props) => props.theme.blue};
