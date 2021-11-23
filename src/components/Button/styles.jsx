@@ -14,6 +14,11 @@ export const Container = styled.button`
     padding: 1em 2em;
     transition: filter 300ms ease;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
     &:hover,
     &:focus {
         filter: brightness(0.9);
