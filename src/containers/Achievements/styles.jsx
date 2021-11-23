@@ -17,7 +17,7 @@ export const Container = styled(DefaultContainer)`
     > div:last-child {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 2rem;
         flex: 1.75;
 

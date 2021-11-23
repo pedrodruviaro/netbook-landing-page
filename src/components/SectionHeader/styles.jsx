@@ -26,6 +26,6 @@ export const Container = styled.header`
         props.center &&
         css`
             text-align: center;
-            width: max-content;
+            max-width: max-content;
         `}
 `;

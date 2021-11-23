@@ -17,7 +17,7 @@ export const Container = styled(DefaultContainer)`
         margin-bottom: 2rem;
 
         h2 {
-            max-width: 30rem;
+            /* max-width: 30rem; */
         }
     }
 
