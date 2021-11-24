@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import { Container, MenuToggle, Wrapper } from "./styles.jsx";
 import { Button } from "../Button";
 
+import { useClickOutside } from "../../hooks/useClickOutside";
+
 export const Header = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+
+    const domNode = useClickOutside(() => {
+        setNavbarOpen(false);
+    });
 
     return (
         <Wrapper>
@@ -12,7 +18,7 @@ export const Header = () => {
                     <img src="/assets/icons/logo.svg" alt="Netbook" />
                 </div>
 
-                <nav>
+                <nav ref={domNode}>
                     <div>
                         <a href="/">Home</a>
                         <a href="/">Community</a>
