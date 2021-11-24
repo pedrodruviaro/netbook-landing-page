@@ -19,6 +19,7 @@ export const Container = styled.li`
         margin-bottom: 1rem;
 
         > img {
+            padding: 0.25rem;
             border: 4px dashed #ffaf2e;
             border-radius: 50%;
         }
