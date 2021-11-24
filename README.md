@@ -5,4 +5,6 @@
 -   React JS
 -   Styled-components
 
-Design Reference:
+![Netbook Landing Page](https://i.imgur.com/bBgRK95.jpg)
+
+Design Reference: 
