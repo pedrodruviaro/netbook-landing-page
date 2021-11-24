@@ -23,12 +23,13 @@ export const Container = styled(DefaultContainer)`
         display: grid;
         gap: 1rem;
         text-align: left;
+        justify-self: start;
 
         span {
             display: inline-block;
             width: fit-content;
             display: grid;
-            place-items: center;
+            justify-items: center;
             font-size: 0.9rem;
             color: ${(props) => props.theme.blue};
             border-radius: 0.5rem;
