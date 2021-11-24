@@ -6,6 +6,7 @@ import { CTA } from "./containers/CTA";
 import { Hero } from "./containers/Hero";
 import { Members } from "./containers/Members";
 import { WhoWeAre } from "./containers/WhoWeAre";
+import { News } from "./containers/News";
 
 export const App = () => {
     return (
@@ -17,6 +18,7 @@ export const App = () => {
             <Community />
             <Members />
             <CTA />
+            <News />
         </>
     );
 };

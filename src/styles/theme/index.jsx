@@ -5,4 +5,6 @@ export const theme = {
 
     lightBlue: "rgba(33, 124, 244, 0.15)",
     blue: "#217BF4",
+
+    yellow: "#FFAF2E",
 };

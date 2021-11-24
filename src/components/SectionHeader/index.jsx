@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styles.jsx";
 
-export const SectionHeader = ({ span, title, text, ...props }) => {
+export const SectionHeader = ({ span, title, text = "", ...props }) => {
     return (
         <Container {...props}>
             <span>{span}</span>
