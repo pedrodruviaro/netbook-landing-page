@@ -12,7 +12,7 @@ export const Container = styled.li`
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
     header {
-        width: 7.75rem;
+        max-width: 7.75rem;
         margin-inline: auto;
         aspect-ratio: 1;
         position: relative;

@@ -8,5 +8,6 @@ export const DefaultContainer = styled.section`
 
     @media (max-width: 45rem) {
         margin-top: 4.5rem;
+        padding: 1.5rem;
     }
 `;

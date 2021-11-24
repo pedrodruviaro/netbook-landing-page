@@ -72,12 +72,11 @@ export const CustomForm = styled.form`
     border: 1px solid #fff;
     border-radius: 0.75rem;
     overflow: hidden;
-
     input {
         font-size: 1rem;
         padding: 0.5rem;
         flex: 1;
-        max-width: 100%;
+        /* max-width: 100%; */
 
         background: transparent;
         border: none;
@@ -103,6 +102,28 @@ export const CustomForm = styled.form`
         font-size: 1rem;
         font-weight: 500;
         padding: 1rem 0;
+        max-width: 100%;
         flex: 1;
+    }
+
+    @media (max-width: 21.875rem) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        border: none;
+
+        input {
+            border: 1px solid;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        button {
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-right: auto;
+        }
     }
 `;

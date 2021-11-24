@@ -15,7 +15,6 @@ export const Container = styled(DefaultContainer)`
         align-items: center;
         max-width: max-content;
         border-radius: 0.75rem;
-        /* gap: 2rem; */
         padding: 0.5rem;
         gap: 0.5rem;
 
@@ -27,10 +26,12 @@ export const Container = styled(DefaultContainer)`
             background-color: transparent;
             font-size: 1rem;
             font-weight: 500;
-            padding: 1rem 2rem;
+            padding: 1rem;
+            max-width: 100%;
             border-radius: 0.75rem;
             cursor: pointer;
             position: relative;
+            flex: 1;
 
             &:hover {
                 outline: 1px solid #ccc;
@@ -41,6 +42,10 @@ export const Container = styled(DefaultContainer)`
                 background-color: ${(props) => props.theme.blue};
                 color: #fff;
                 box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+            }
+
+            @media (min-width: 30rem) {
+                padding: 1rem 2rem;
             }
         }
     }
