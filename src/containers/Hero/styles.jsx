@@ -2,12 +2,19 @@ import styled from "styled-components";
 import { DefaultContainer } from "../../components/DefaultContainer";
 
 export const Wrapper = styled.div`
-    background: linear-gradient(to top, #d4e7fe -15.24%, #ffffff 78.85%);
+    background: linear-gradient(
+        0deg,
+        rgba(241, 246, 253, 0) 1.63%,
+        #f1f6fd 20.5%,
+        #f1f6fd 58.57%,
+        #ffffff 100%
+    );
+
+    padding-bottom: 2rem;
 `;
 
 export const Container = styled(DefaultContainer)`
     margin-top: 0;
-
     display: grid;
 
     gap: 4.315rem;
