@@ -12,6 +12,10 @@ export const News = () => {
                 {articles.map((article) => (
                     <ArticlePreview key={article.title} {...article} />
                 ))}
+
+                <span>
+                    <img src="/assets/icons/dots.svg" alt="" />
+                </span>
             </div>
         </Container>
     );

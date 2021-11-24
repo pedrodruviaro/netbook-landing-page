@@ -7,6 +7,7 @@ import { Hero } from "./containers/Hero";
 import { Members } from "./containers/Members";
 import { WhoWeAre } from "./containers/WhoWeAre";
 import { News } from "./containers/News";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
     return (
@@ -19,6 +20,7 @@ export const App = () => {
             <Members />
             <CTA />
             <News />
+            <Footer />
         </>
     );
 };

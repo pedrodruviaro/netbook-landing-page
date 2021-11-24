@@ -13,6 +13,16 @@ export const Container = styled(DefaultContainer)`
         align-items: center;
         gap: 2rem;
 
+        position: relative;
+
+        span {
+            position: absolute;
+            top: -2rem;
+            left: -2rem;
+
+            max-width: 8.5rem;
+        }
+
         @media (min-width: 50rem) {
             flex-direction: row;
             align-items: flex-start;
