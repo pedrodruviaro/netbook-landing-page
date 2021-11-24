@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { DefaultContainer } from "../imports";
 
 export const Container = styled(DefaultContainer)`
@@ -19,35 +19,6 @@ export const Container = styled(DefaultContainer)`
         gap: 0.5rem;
 
         background-color: ${(props) => props.theme.lightBlue};
-
-        > button {
-            border: none;
-            outline: none;
-            background-color: transparent;
-            font-size: 1rem;
-            font-weight: 500;
-            padding: 1rem;
-            max-width: 100%;
-            border-radius: 0.75rem;
-            cursor: pointer;
-            position: relative;
-            flex: 1;
-
-            &:hover {
-                outline: 1px solid #ccc;
-                outline-offset: 3px;
-            }
-
-            &:nth-child(3) {
-                background-color: ${(props) => props.theme.blue};
-                color: #fff;
-                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-            }
-
-            @media (min-width: 30rem) {
-                padding: 1rem 2rem;
-            }
-        }
     }
 
     ul {
@@ -63,5 +34,38 @@ export const Container = styled(DefaultContainer)`
         @media (min-width: 58.125rem) {
             grid-template-columns: repeat(4, 1fr);
         }
+    }
+`;
+
+export const CustomButton = styled.button`
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    position: relative;
+    flex: 1;
+
+    &:hover {
+        outline: 1px solid #ccc;
+        outline-offset: 3px;
+    }
+
+    transition: all 200ms;
+
+    ${(props) =>
+        props.active &&
+        css`
+            background-color: ${(props) => props.theme.blue};
+            color: #fff;
+            box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        `}
+
+    @media (min-width: 30rem) {
+        padding: 1rem 2rem;
     }
 `;

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { SectionHeader } from "../imports.js";
-import { Container } from "./styles.jsx";
+import { Container, CustomButton } from "./styles.jsx";
 import { members } from "./data";
 import { MemberDisplay } from "../../components/MemberDisplay/index.jsx";
 
 export const Members = () => {
+    const [selected, setSelected] = useState("Active");
+
+    function handleSelected(e) {
+        setSelected(e.target.innerText);
+    }
+
     return (
         <Container>
             <SectionHeader
@@ -15,9 +21,24 @@ export const Members = () => {
             />
 
             <div>
-                <button>Newst</button>
-                <button>Popular</button>
-                <button>Active</button>
+                <CustomButton
+                    active={selected === "Newst" ? true : false}
+                    onClick={handleSelected}
+                >
+                    Newst
+                </CustomButton>
+                <CustomButton
+                    active={selected === "Popular" ? true : false}
+                    onClick={handleSelected}
+                >
+                    Popular
+                </CustomButton>
+                <CustomButton
+                    active={selected === "Active" ? true : false}
+                    onClick={handleSelected}
+                >
+                    Active
+                </CustomButton>
             </div>
 
             <ul>
