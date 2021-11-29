@@ -7,4 +7,4 @@
 
 ![Netbook Landing Page](https://i.imgur.com/bBgRK95.jpg)
 
-Design Reference: 
+Design: Besnik agency 
